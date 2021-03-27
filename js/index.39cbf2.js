@@ -1,0 +1,31 @@
+(function(d){var h=[];d.loadImages=function(a,e){"string"==typeof a&&(a=[a]);for(var f=a.length,g=0,b=0;b<f;b++){var c=document.createElement("img");c.onload=function(){g++;g==f&&d.isFunction(e)&&e()};c.src=a[b];h.push(c)}}})(window.jQuery);
+var wl;
+
+ldsrcset=function(t){var e,r=document.querySelectorAll(t);for(e=0;e<r.length;e++){var c=r[e].getAttribute("data-srcset");r[e].setAttribute("srcset",c)}},ldsrc=function(t){var e=document.querySelector(t),r=e.getAttribute("data-src");e.setAttribute("src",r)};!function(){if("Promise"in window){var e,t,r=document,n=function(){return r.createElement("link")},o=new Set,a=n(),i=a.relList&&a.relList.supports&&a.relList.supports("prefetch"),s=location.href.replace(/#[^#]+$/,"");o.add(s);var c=function(e){var t=location,r="http:",n="https:";if(e&&e.href&&e.origin==t.origin&&[r,n].includes(e.protocol)&&(e.protocol!=r||t.protocol!=n)){var o=e.pathname;if(!(e.hash&&o+e.search==t.pathname+t.search||".html"!=o.substr(-5)&&".html"!=o.substr(-5)&&"/"!=o.substr(-1)))return!0}},u=function(e){var t=e.replace(/#[^#]+$/,"");if(!o.has(t)){if(i){var a=n();a.rel="prefetch",a.href=t,r.head.appendChild(a)}else{var s=new XMLHttpRequest;s.open("GET",t,s.withCredentials=!0),s.send()}o.add(t)}},f=function(e){return e.target.closest("a")},p=function(t){var r=t.relatedTarget;r&&f(t)==r.closest("a")||e&&(clearTimeout(e),e=void 0)},l={capture:!0,passive:!0};r.addEventListener("touchstart",function(e){t=performance.now();var r=f(e);c(r)&&u(r.href)},l),r.addEventListener("mouseover",function(r){if(!(performance.now()-t<1200)){var n=f(r);c(n)&&(n.addEventListener("mouseout",p,{passive:!0}),e=setTimeout(function(){u(n.href),e=void 0},80))}},l)}}();
+
+$(function(){
+r=function(){dpi=window.devicePixelRatio;var e=document.querySelector('.js1');e.setAttribute('src',(dpi>1)?((dpi>2)?'images/p1000168-1440.jpg':'images/p1000168-960.jpg'):'images/p1000168-480.jpg');
+var e=document.querySelector('.js2');e.setAttribute('src',(dpi>1)?((dpi>2)?'images/p1000180-1440.jpg':'images/p1000180-960.jpg'):'images/p1000180-480.jpg');
+var e=document.querySelector('.js3');e.setAttribute('src',(dpi>1)?((dpi>2)?'images/p1000187-1440.jpg':'images/p1000187-960.jpg'):'images/p1000187-480.jpg');
+var e=document.querySelector('.js4');e.setAttribute('src',(dpi>1)?((dpi>2)?'images/p1000250-1440.jpg':'images/p1000250-960.jpg'):'images/p1000250-480.jpg');
+var a='data-src';var e=document.querySelector('.js5');if(e.hasAttribute('src')){a='src';}e.setAttribute(a,(dpi>1)?((dpi>2)?'images/p1000207-1440.jpg':'images/p1000207-960.jpg'):'images/p1000207-480.jpg');
+var a='data-src';var e=document.querySelector('.js6');if(e.hasAttribute('src')){a='src';}e.setAttribute(a,(dpi>1)?((dpi>2)?'images/p1000225-1440.jpg':'images/p1000225-960.jpg'):'images/p1000225-480.jpg');
+var a='data-src';var e=document.querySelector('.js7');if(e.hasAttribute('src')){a='src';}e.setAttribute(a,(dpi>1)?((dpi>2)?'images/p1000189-1440.jpg':'images/p1000189-960.jpg'):'images/p1000189-480.jpg');
+var a='data-src';var e=document.querySelector('.js8');if(e.hasAttribute('src')){a='src';}e.setAttribute(a,(dpi>1)?((dpi>2)?'images/p1000227-1440.jpg':'images/p1000227-960.jpg'):'images/p1000227-480.jpg');
+var a='data-src';var e=document.querySelector('.js9');if(e.hasAttribute('src')){a='src';}e.setAttribute(a,(dpi>1)?((dpi>2)?'images/p1000193-1440.jpg':'images/p1000193-960.jpg'):'images/p1000193-480.jpg');
+var a='data-src';var e=document.querySelector('.js10');if(e.hasAttribute('src')){a='src';}e.setAttribute(a,(dpi>1)?((dpi>2)?'images/p1000195-1440.jpg':'images/p1000195-960.jpg'):'images/p1000195-480.jpg');
+var a='data-src';var e=document.querySelector('.js11');if(e.hasAttribute('src')){a='src';}e.setAttribute(a,(dpi>1)?((dpi>2)?'images/p1000215-1440.jpg':'images/p1000215-960.jpg'):'images/p1000215-480.jpg');
+var a='data-src';var e=document.querySelector('.js13');if(e.hasAttribute('src')){a='src';}e.setAttribute(a,(dpi>1)?((dpi>2)?'images/p1000242-1440.jpg':'images/p1000242-960.jpg'):'images/p1000242-480.jpg');
+var a='data-src';var e=document.querySelector('.js14');if(e.hasAttribute('src')){a='src';}e.setAttribute(a,(dpi>1)?((dpi>2)?'images/p1000241-1440.jpg':'images/p1000241-960.jpg'):'images/p1000241-480.jpg');
+var a='data-src';var e=document.querySelector('.js15');if(e.hasAttribute('src')){a='src';}e.setAttribute(a,(dpi>1)?((dpi>2)?'images/p1000247-1440.jpg':'images/p1000247-960.jpg'):'images/p1000247-480.jpg');
+var a='data-src';var e=document.querySelector('.js16');if(e.hasAttribute('src')){a='src';}e.setAttribute(a,(dpi>1)?((dpi>2)?'images/p1000270-1440.jpg':'images/p1000270-960.jpg'):'images/p1000270-480.jpg');
+var a='data-src';var e=document.querySelector('.js17');if(e.hasAttribute('src')){a='src';}e.setAttribute(a,(dpi>1)?((dpi>2)?'images/p1000274-1440.jpg':'images/p1000274-960.jpg'):'images/p1000274-480.jpg');
+var a='data-src';var e=document.querySelector('.js18');if(e.hasAttribute('src')){a='src';}e.setAttribute(a,(dpi>1)?((dpi>2)?'images/p1000277-1440.jpg':'images/p1000277-960.jpg'):'images/p1000277-480.jpg');
+var a='data-src';var e=document.querySelector('.js19');if(e.hasAttribute('src')){a='src';}e.setAttribute(a,(dpi>1)?((dpi>2)?'images/p1000280-1440.jpg':'images/p1000280-960.jpg'):'images/p1000280-480.jpg');};
+if(!window.HTMLPictureElement){r();}
+js12=new Plyr('.js12 video',{iconUrl:'css/plyr.svg',blankUrl: 'css/blank.mp4',controls:['play-large','play','progress','current-time','mute','volume','fullscreen'],storage:{enabled:false}});
+js12.volume=0.8;
+js20=new Plyr('.js20 video',{iconUrl:'css/plyr.svg',blankUrl: 'css/blank.mp4',controls:['play-large','play','progress','current-time','mute','volume','fullscreen'],storage:{enabled:false}});
+js20.volume=0.8;
+ldsrc('.js5');ldsrcset('.js21 source');ldsrc('.js6');ldsrcset('.js22 source');ldsrc('.js7');ldsrcset('.js23 source');ldsrc('.js8');ldsrcset('.js24 source');ldsrc('.js9');ldsrcset('.js25 source');ldsrc('.js10');ldsrcset('.js26 source');ldsrc('.js11');ldsrcset('.js27 source');ldsrc('.js13');ldsrcset('.js28 source');ldsrc('.js14');ldsrcset('.js29 source');ldsrc('.js15');ldsrcset('.js30 source');ldsrc('.js16');ldsrcset('.js31 source');ldsrc('.js17');ldsrcset('.js32 source');ldsrc('.js18');ldsrcset('.js33 source');ldsrc('.js19');ldsrcset('.js34 source');
+});
